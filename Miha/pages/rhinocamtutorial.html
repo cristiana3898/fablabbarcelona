@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+ <title>Rhino Cam and Cnc</title>
+ <head>
+ <style>
+			div.container {
+   			 width: 100%;
+			}
+
+			header, footer {
+   			 padding: 1em;
+   			 color: black;
+    		background-color: #9D93AC;
+   			 clear: left;
+   			 text-align: center;
+			}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+body {
+	background-color:  #9D93AC
+
+}
+
+   
+</style>
+</head>
+<body>
+
+<div class="container">
+	<ul class="cd-container">
+
+    <header>
+  <h1>Rhino Cam and Cnc<h1>
+  </header>
+  <body>
+    This is a tutorial for doing a lamp.
+   <br> Prepare your 3d model for 2 axis CNC milling.
+
+<br>Previous considerations.
+<br>Is a 2d production technique (so you will need to convert your 3d model in some sort of 2D assembly, in order to create the 3D shape)
+<br>set up your document in mm
+the tools we are using at Fablab BCN
+load your .vkb file with your Fablab or your own tools, like drill bits sizes and shapes.
+TO do this CLICK on the Tools ICON tab in the RhinoCAM window (the tabs on the top of the window)
+a window will open in your rhino interface.
+click on the second icon > Load Tool Library.  A explorer window will pop up, navigate to the folder where the .vkb file is located. DONE! if you did it properly your tools will appear now on this window.
+
+
+<br>1. Make2D rhino command for making 2D shapes.
+<br>2. Draw the bounding area according to the size of the board you r gonna mill. Move the bounding box to point 0,0,0
+<br>3. Join and group all lines according to the needs of your cutting paths.
+<br>4. Do the proper nesting (wasting as less material as possible)
+<br>5. If necessary change the units of the document & model > standart tab in rhino, fifth icon> document properties, units, change to milimeters.
+
+<br>6. RhinoCAM window.
+<il>click on MILL *mill option should be the one selected and readable*</il>
+<il>MACHINE tab > manual definition, number of axes > 3 axis
+CLick OK </il>
+<il>POST tab current post processor, choose ShopBot from the drop down menu</il>
+<il>Folder, leave the default</il>
+<il>Everything else by default.</il>
+<il>At the bottom, POSTED FILE EXTENSION choose from drop down or add new write .sbp
+Click OK</il>
+<il>Choose bounding area *the board shape in the rhino top view*
+Click on STOCK tab on the rhinoCAM window. Stock from selection. If this does not work,
+try this > box stock, put the size in x,y,z from your material board.
+Click OK</il>
+Machining operations tab > Here is where we choose the milling strategies. 
+Mainly we gonna use the POCKETING *for holes through and pockets* and we will use PROFILING for cutting, divinding and trimming operations.
+click on the machining operations tab > 2axis tab > and then in PROFLING tab
+2 1/2 Axis Window pops up. From now on all tabs we are talking about are inside this window.  A lot of tabs don t panic we will go through all of them.
+CONTROL GEOMETRY TAB.
+Click on Remove All. 
+then click on select curve / edge regions.
+then in the top view in rhino select the lines which you wish to create a strategy. when done click enter.
+TOOL TAB.
+Thanks to loading the .vkb file previously now we have the tools from FabLab BCN that we loaded.
+In my case I select the FlatMill 6 mm
+FEEDS AND SPEEDS TAB.
+Change plumb to 1000 ?????
+CLEARENCE PLANE TAB.
+Stock Max Z + Dist. In our case 25
+CUT PARAMETERS TAB.
+Cut Direction Mixed
+Inside/Outside for closed curves. Choose the one that your need/prefer
+CUT LEVELS TAB.
+At top
+Cut Depth Control > Total Cut depth (your material thickness)
+Rough depth 5
+Finish depth 15
+Depth First
+ENTRY/EXIT TAB.
+Entry motions > None
+Exit motions > None
+ADVANCED CUT PARAMETERS TAB.
+Bridges & Tabs
+Triangular
+bridge height 2
+bridge length 4
+Number of bridges (depending on the complexity of your bridge)
+SORTING
+Minimum Distance Sort
+If you want to make different strategies for different kinds pf profiling you can (same with pocketing)
+Once you are done you can click on save and generate (if you save and go to Simulate, in the perspective window, if you click on play you will see a simulation of the mill's path)
+Select Layer with pockets
+Lower Left
+
+<br>For the pocketing and the hole drill (for the screws, is the same but with points) strategies you should follow the same procedure.
+
+<br>Once you have all your strategies saved is time to click on the generate button. you should click on each strategy icon and click on genearte, after this the small flower icon beside the folder will disappear.
+
+<br>Once we are done with all of them. 
+
+<br>We right-click on the first strategy and click on the POST option a pop up window will appear and we will save our first file (gcode). We should do this for all strategies.
+
+
+
+
+
+
+
+
