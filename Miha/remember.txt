@@ -1,0 +1,4 @@
+file:https://codyhouse.co/gem/icons-filling-effect/
+img: inkscape -> text: elefant 56 -> EDIT: make a bitmap copy
+COLOUR #A793AC
+	#280B0B
