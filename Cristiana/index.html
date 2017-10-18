@@ -15,7 +15,38 @@ On Github we created a new repository that we can all join. Then we stated worki
 <li>-250ml of water,</li>
 <li>-50g of gelatine,</li>
 <li>-20g of glicerina vegetal.</li>
- We put the water in the pot on the stove, then we started add the gelatine while mixing it, we have to be careful to don't let form lumps in the liquid. We let it boil and then we put the glicerina. Then the gelatine started create a white foam that we remove with a spoon. Then we add the acrylic paint and mix it all over gain. After taking away the foam we inverted the liquid on a table and let it dry for some days.</p>
+<li>-Acrylic paint </li>
+ We put the water in the pot on the electric cooker, then we started add the gelatine while mixing it, we have to be careful to don't let form lumps in the liquid. We let it boil and then we put the glicerina. Then the gelatine started create a white foam that we remove with a spoon. Then we add the acrylic paint and mix it all over gain. After taking away the foam we inverted the liquid on a table and let it dry for some days.</p>
+
+<head>
+<style>
+body {margin:25px;}
+
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Ingredients and Tools</h2>
+
+<div class="polaroid">
+  <img src="file:///C:/Users/crida/Documents/GitHub/photofab/IMG_5012.JPG" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Acrylic paint, Water, Glicerina Vegetal, Gelatine, Balance, Containers, Pot and Electric Cooker.</p>
+  </div>
+</div>
+
+</body>
 
 <h2>Laser cutter</h2>
 <p style="color:black"><p style="font-size:20px;">
@@ -24,8 +55,8 @@ On Github we created a new repository that we can all join. Then we stated worki
 <li>-Focusing using the tool,</li>
 <li>-Download the 3dm file from the cloud,</li>
 <li>-Open the file with Rhino:</li>
-<li>+On Rhino, check if the design have break lines, if it has, you hAve to select all the design and join it (clicking on join),</li>
-<li>+Check the measures and put all the design in red,</li>
+<li>+On Rhino, check if the design have break lines, if it has, you have to select all the design and join it (clicking on join),</li>
+<li>+Check the measures and put all the design in red (if you want cut it) or in black (if you want ingrave it),</li>
 <li>+Click on file and then on print,</li>
 <li>+Check id the machine is the right one, then check the scale that have to be 1:1, then check if the imagine is in vectors,</li>
 <li>+Click on properties and select the working area,</li>
@@ -36,6 +67,47 @@ On Github we created a new repository that we can all join. Then we stated worki
 <li>*Click on ready to connect the machine to the pc,</li>
 <li>*Click on setting and then on materials (first voice),</li>
 <li>*Select your material, speed and power (you have to take some tests to find the right one.</li>
+<body> 
+
+<div style="text-align:left;"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="LASER" width="420">
+    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/LASER.mp4" type="video/mp4">
+    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/LASER.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = photofab("LASER"); 
+
+function playPause() { 
+    if (LASER.paused) 
+        LASER.play(); 
+    else 
+        LASER.pause(); 
+} 
+function makeBig() { 
+    LASER.width = 800; 
+} 
+
+function makeSmall() { 
+    LASER.width = 320; 
+} 
+
+function makeNormal() { 
+    LASER.width = 420; 
+} 
+</script> 
+ 
+</body> 
+
+
+
 <h2>Vinyl Cutter</h2>
 <p style="color:black"><p style="font-size:20px;"> Vinyl Cutter:
 <li>-Open the file in inkscape:</li>
@@ -71,7 +143,7 @@ Below there're the values of our object.</li>
 First step you have to open your PNG file on Fab Modules that is an open Source CAM software. It allows you to generate machining strategies for lots of different processes and machines.
 Once you have finished setting up the cutting strategy you should save th file (pay attention to the z0 and the zHome, it have to be at leat 5 or you'll cut when it returns to the home). It'll download into your computer as a .rml file.
 Then you have to open the file with Roland Monofab that is a desktop milling machine. It moves in much the same way as a 3d printer, but instead of adding material it substracts it. The CAM software that controls the machine is called V panel. 
-First of all we'll need to secure the Blnck PCB to the bed of the monofab with double sided tape. Then by moving the Milling bit at the bottom left corner of the blank we can Zero the X and Y axis using the User oordinate system.</li>
+First of all we'll need to secure the Blnck PCB to the bed of the monofab with double sided tape. Then by moving the Milling bit at the bottom left corner of the blank we can Zero the X and Y axis using the User oordinate system.</li>g
 <head>
 <style>
 body { 
