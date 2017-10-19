@@ -66,47 +66,22 @@ div.container {
 <li>*Drag the design from the left to the middle,</li>
 <li>*Click on ready to connect the machine to the pc,</li>
 <li>*Click on setting and then on materials (first voice),</li>
-<li>*Select your material, speed and power (you have to take some tests to find the right one.</li>
+<li>*Select your material, speed and power (you have to take some tests to find the right one.)</li> 
 
-<body> 
+<body>
 
-<div style="text-align:left;"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="ingrave" width="420">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/ingrave.mp4" type="video/mp4">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/ingrave.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
+<video width="320" height="240" controls>
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/ingrave.mp4" type="video/mp4">
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/ingrave.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 
-<script> 
-var myVideo = photofab("ingrave"); 
-
-function playPause() { 
-    if (ingrave.paused) 
-        ingrave.play(); 
-    else 
-        ingrave.pause(); 
-} 
-function makeBig() { 
-    ingrave.width = 800; 
-} 
-
-function makeSmall() { 
-    ingrave.width = 320; 
-} 
-
-function makeNormal() { 
-    ingrave.width = 420; 
-} 
-</script> 
- 
-</body> 
-
+<video width="320" height="240" controls>
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Alce.mp4" type="video/mp4">
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Alce.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</body>
 
 <h2>Vinyl Cutter</h2>
 <p style="color:black"><p style="font-size:20px;"> Vinyl Cutter:
@@ -123,9 +98,35 @@ function makeNormal() {
 <li>-If you want simplify a photo goes to path on inkscape and click on simplify</li>
 
 <h2> 3D Printer </h2>
-<li>3D Printing, also known as Additive Manufacturing, refers to processes used to create a three-dimensional object  in which layers of material are formed under computer control to create an object. Objects can be of almost any shape or geometry and typically are produced using digital model data from a 3D model or another electronic data source such as an Additive Manufacturing File (AMF) file. STereoLithography (STL) is one of the most common file types that 3D printers can read. Once you have to file, you must open it with Cura. On it you have to select the material and the machine that you'll use. Then you have to check all the values and save it. (For the Multimaker, you have to put the file in the memory card).
-To prepare the machine you have to put the hair spray on the surface of the glass top, the you have to stuck it on the base with some pins. Then select print on the machine and it'll pepare the material. Then wait until it's done!
-Below there're the values of our object.</li>
+<li>3D Printing, also known as Additive Manufacturing, refers to processes used to create a three-dimensional object  in which layers of material are formed under computer control to create an object. Objects can be of almost any shape or geometry and typically are produced using digital model data from a 3D model or another electronic data source such as an Additive Manufacturing File (AMF) file. STereoLithography (STL) is one of the most common file types that 3D printers can read. Once you have to file, you must open it with Cura. On it you have to select the material and the machine that you'll use. Then you have to check all the values and save it. (For the Multimaker, you have to put the file in the memory card).</li>
+<head>
+<style>
+body {margin:25px;}
+
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="polaroid">
+  <img src="file:///C:/Users/crida/Documents/GitHub/photofab/cura.JPG" alt="Cura" style="width:100%">
+  <div class="container">
+    <p>Cura.</p>
+</div>
+</div>
+</body>
+
+<li>To prepare the machine you have to put the hair spray on the surface of the glass top, the you have to stuck it on the base with some pins. Then select print on the machine and it'll prepare the material. Then wait until it's done!</li>
 <head>
 <style>
 body {margin:25px;}
@@ -153,51 +154,16 @@ div.container {
     <p>Ultimaker.</p>
 </div>
 </div>
-</body>
 
-<h4> Below there's a video that how the printer works.</h4>
-
-<body> 
-
-<div style="text-align:left;"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="Shuttle" width="420">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Shuttle.mp4" type="video/mp4">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Shuttle.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
-
-<script> 
-var myVideo = photofab("Shuttle"); 
-
-function playPause() { 
-    if (Shuttle.paused) 
-        Shuttle.play(); 
-    else 
-        Shuttle.pause(); 
-} 
-function makeBig() { 
-    Shuttle.width = 800; 
-} 
-
-function makeSmall() { 
-    Shuttle.width = 320; 
-} 
-
-function makeNormal() { 
-    Shuttle.width = 420; 
-} 
-</script> 
- 
-</body> 
-
+<video width="320" height="240" controls>
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Shuttle.mp4" type="video/mp4">
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/Shuttle.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 
 </body>
+
+
 <h2>Arduino</h2>
 <li>Arduino is an open source computer hardware. It is composed by electronics boards that it has a microcontroller. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards (shields) and other circuits. The boards feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs from personal computers.</li>
 <p>Arduino Code:
@@ -212,51 +178,21 @@ function makeNormal() {
 <li>Boolean</li>
 <li>Type</li>
 
-<body> 
+<video width="320" height="240" controls>
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/arduino.mp4" type="video/mp4">
+  <source src="file:///C:/Users/crida/Documents/GitHub/photofab/arduino.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 
-<div style="text-align:left;"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="Arduino" width="420">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/arduino.mp4" type="video/mp4">
-    <source src="file:///C:/Users/crida/Documents/GitHub/photofab/arduino.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
-
-<script> 
-var myVideo = photofab("Arduino"); 
-
-function playPause() { 
-    if (Arduino.paused) 
-        Arduino.play(); 
-    else 
-        Arduino.pause(); 
-} 
-function makeBig() { 
-    Arduino.width = 800; 
-} 
-
-function makeSmall() { 
-    Arduino.width = 320; 
-} 
-
-function makeNormal() { 
-    Arduino.width = 420; 
-} 
-</script> 
- 
 </body>
+
 
 <h2> Milling Machine </h2>
 <li> Milling is the machining process of using rotary cutters to remove material from a workpiece by advancing in a direction at an angle with the axis of the tool. With this technology you can create your own circuit.
 First step you have to open your PNG file on Fab Modules that is an open Source CAM software. It allows you to generate machining strategies for lots of different processes and machines.
 Once you have finished setting up the cutting strategy you should save th file (pay attention to the z0 and the zHome, it have to be at leat 5 or you'll cut when it returns to the home). It'll download into your computer as a .rml file.
 Then you have to open the file with Roland Monofab that is a desktop milling machine. It moves in much the same way as a 3d printer, but instead of adding material it substracts it. The CAM software that controls the machine is called V panel. 
-First of all we'll need to secure the Blnck PCB to the bed of the monofab with double sided tape. Then by moving the Milling bit at the bottom left corner of the blank we can Zero the X and Y axis using the User oordinate system.</li>g
+First of all we'll need to secure the Blnck PCB to the bed of the monofab with double sided tape. Then by moving the Milling bit at the bottom left corner of the blank we can Zero the X and Y axis using the User oordinate system.</li>
 <head>
 <style>
 body { 
