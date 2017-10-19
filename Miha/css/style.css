@@ -17,8 +17,8 @@ html * {
 body {
   font-size: 100%;
   font-family: "Merriweather", serif;
-  color: #A793AC;
-  background-color: #A793AC;
+  color: #9D93AC;
+  background-color: #9D93AC;
 }
 
 /* -------------------------------- 
@@ -95,7 +95,7 @@ body::after {
 header {
   position: relative;
   height: 50%;
-  background-color: #A793AC;
+  background-color: #9D93AC;
   z-index: 2;
 }
 header h1 {
@@ -122,7 +122,7 @@ header h1 {
   z-index: 2;
   min-height: 50px;
   margin-left: 56px;
-  background-color: #A793AC;
+  background-color: #9D93AC;
   padding: 1em 1em 4em;
 }
 .cd-service::before, .cd-service::after {
@@ -249,6 +249,7 @@ header h1 {
 footer {
   position: relative;
   height: 50%;
-  background: #A793AC;
+  background: #9D93AC;
   z-index: 2;
+  background-image: url("../img/fablab.svg");
 }

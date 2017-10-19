@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+ <title>How to do a screw (thread and nut) on Onshape</title>
+ <head>
+ <style>
+			div.container {
+   			 width: 100%;
+			}
+
+			header, footer {
+   			 padding: 1em;
+   			 color: black;
+    		background-color: #9D93AC;
+   			 clear: left;
+   			 text-align: center;
+			}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+body {
+	background-color:  #9D93AC
+
+}
+
+   
+</style>
+</head>
+<body>
+
+<div class="container">
+	<ul class="cd-container">
+
+    <header>
+  <h1>How to do a screw (thread and nut) on Onshape<h1>
+  </header>
+  <body>
+    First of all go to <a href= https://www.onshape.com/>Onshape</a>, sign in and go in the document menu, then in workspace units and select millimiters.
+    <br>To create the thread:
+    <ul>
+      <li>create sketch 1 -> select top plane -> create a circle and click on done</li>
+      <li>click extrude (solid, face of sketch 1)</li>
+      <li>Helix (turns, face of extrude 1)</li>
+      <li>create a plane (if it is necessary) -> select plane, offset </li>
+      <li>create sketch 2(hide part 1) -> front plane-> create a triangle (make sure that the distance from the angle and the helix is 0) -> select =(equal) and click all the faces -> select a face in up and the helix and click on pierce</li>
+      <li>click on sweep -> solid, add, face of sketch 2 merge with all </li>
+
+      <br> Duplicate and make the tringle bigger
+      <br>To create the nut:
+      <li>click on derived -> the copy bigger</li>
+      <li>boolean</li> 
