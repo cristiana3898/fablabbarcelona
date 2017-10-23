@@ -2,3 +2,9 @@ file:https://codyhouse.co/gem/icons-filling-effect/
 img: inkscape -> text: elefant 56 -> EDIT: make a bitmap copy
 COLOUR #9D93AC
 	#280B0B
+
+FONT: title -> Papyrus -> <h1 style="font-family:papyrus">
+      body -> courier-> <p style="font-family:courier">
+	index -> style="font-family:verdana"
+
+footer image: <footer><img src="file:///C:/Users/Usuario/Documents/GitHub/fablabbarcelona/Miha/img/fablab.svg" style="width:1100px;height:100px;"></footer>
