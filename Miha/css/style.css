@@ -161,6 +161,21 @@ header h1 {
 .cd-service.cd-service-4::before {
   background-image: url("../img/cd-icon-4-small.svg");
 }
+.cd-service.cd-service-5::before {
+  background-image: url("../img/cd-icon-5-small.svg");
+}
+.cd-service.cd-service-9::before {
+  background-image: url("../img/cd-icon-9-small.svg");
+}
+.cd-service.cd-service-10::before {
+  background-image: url("../img/cd-icon-10-small.svg");
+}
+.cd-service.cd-service-15::before {
+  background-image: url("../img/cd-icon-15-small.svg");
+}
+.cd-service.cd-service-16::before {
+  background-image: url("../img/cd-icon-16-small.svg");
+}
 .cd-service h2 {
   text-transform: uppercase;
   color: white;
