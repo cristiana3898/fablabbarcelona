@@ -269,7 +269,7 @@ footer {
 footer {
     width: 100%;
     height: 400px;
-    background-image: url(file:///C:/Users/Usuario/Documents/GitHub/fablabbarcelona/Miha/img/fablab.svg);
+    background-image: url(../img/fablab.svg);
     background-size: 100% 100%;
 };
 }
